@@ -71,16 +71,16 @@ int main(int argc, const char * argv[]) {
 
 void prepareCipherText(vector<char> &alphabets, vector<char> &cipher, map<char, char> &alphaCipher, int shift)
 {
-    for(int i = 0; i < 26; i++){
-        alphabets.push_back((char)(97 + i));
+    for(int i = 0; i < 64; i++){
+        alphabets.push_back((char)(65 + i));
     }
     
-    for(int j = shift; j < 26; j++){
-        cipher.push_back((char)(97 + j));
+    for(int j = shift; j < 64; j++){
+        cipher.push_back((char)(65 + j));
     }
     
     for(int j = 0; j < shift; j++){
-        cipher.push_back((char)(97 + j));
+        cipher.push_back((char)(65 + j));
     }
     
     if (alphabets.size() == cipher.size()){
