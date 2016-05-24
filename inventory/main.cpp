@@ -14,7 +14,7 @@ int main(int argc, const char * argv[]) {
     inv.show();
     std::cout << std::endl;
     std::cout << "Total quantity of all products: " << inv.countQuantity();
-    std::cout << endl;
+    std::cout << std::endl;
     
     return 0;
 }
