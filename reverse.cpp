@@ -1,15 +1,14 @@
 #include <iostream>
 #include <algorithm>
 #include <string>
-using namespace std;
 
 int main(int argc, const char * argv[]) {
-    string str;
-    cout << "Enter String :\n";
-    getline(cin, str);
+    std::string str;
+    std::cout << "Enter String :\n";
+    std::getline(std::cin, str);
     
-    reverse(begin(str), end(str));
-    cout << str;
+    std::reverse(begin(str), end(str));
+    std::cout << str;
     
     return 0;
 }
