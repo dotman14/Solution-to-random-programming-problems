@@ -10,11 +10,11 @@ class Inventory{
 public:
     Inventory();
     void insert(Products& prod);
-    bool exist(string id) const;
+    bool exist(std::string id) const;
     void show() const;
     int  countQuantity() const;
-    void increaseQuantity(string id, int quantity);
-    void decreaseQuantity(string id, int quantity);
+    void increaseQuantity(std::string id, int quantity);
+    void decreaseQuantity(std::string id, int quantity);
     
 private:
     vector<Products> productInventory;
