@@ -3,19 +3,18 @@
 
 #include <iostream>
 #include <string>
-using namespace std;
 
 class Products{
 private:
     float price;
     int quantity;
-    string id;
+    std::string id;
     
 public:
     Products();
-    Products(string id, float price, int quantity);
+    Products(std::string id, float price, int quantity);
     
-    string getId() const;
+    std::string getId() const;
     float  getPrice() const;
     int    getQuantity() const;
     void   setQuantity(int id);
