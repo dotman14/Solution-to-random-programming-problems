@@ -1,7 +1,6 @@
 #include <iostream>
 #include "inventory.hpp"
 #include "product.hpp"
-using namespace std;
 
 int main(int argc, const char * argv[]) {
     
@@ -11,11 +10,11 @@ int main(int argc, const char * argv[]) {
     Inventory inv;
     inv.insert(php);
     inv.insert(java);
-    cout << endl;
+    std::cout << std::endl;
     inv.show();
-    cout << endl;
-    cout << "Total quantity of all products: " << inv.countQuantity();
-    cout << endl;
+    std::cout << std::endl;
+    std::cout << "Total quantity of all products: " << inv.countQuantity();
+    std::cout << endl;
     
     return 0;
 }
